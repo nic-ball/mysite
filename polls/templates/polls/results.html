@@ -1,4 +1,7 @@
+<html>
+<head>
 <h1>{{ question.question_text }}</h1>
+</head>
 
 <ul>
 {%  for choice in question.choice_set.all %}
@@ -7,3 +10,4 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+</html>
